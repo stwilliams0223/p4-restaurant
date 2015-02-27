@@ -1,6 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Salsa|Bowlby+One);
 
-@import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Qwigley);
 
 body {
   margin:0;
@@ -8,20 +6,19 @@ body {
   background:#222222;
 }
 
-.Home img{
+.home{
 
-width: 50%;
-height:100%;
-background: url(../img/sushi-plate.jpg);
+background: url("../img/sushi-plate2.jpg")
+
 }
 
 .wrapper {
 
   display:block;
   margin:0 auto;
-  width:90%;
+  width:100%;
   height:100%;
-  background:white;
+
 }
 
 .navigation {
@@ -31,12 +28,13 @@ background: url(../img/sushi-plate.jpg);
   width:275px;
   background: #222222;
   color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .navTop {
   width:100%;
-  height:200px;
   overflow:hidden;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .navTop img {
@@ -51,12 +49,12 @@ background: url(../img/sushi-plate.jpg);
 .navMid h3 {
   margin:0;
   padding:10px 10px 2px 10px;
-  font-family:'Salsa';
+  font-family: 'Open Sans Condensed', sans-serif;
   text-align:center;
 }
 
 .navMid p {
-  font-family:'Nothing You Could Do';
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size:.8em;
   margin:0;
   padding:8px 18px 15px 18px;
@@ -73,8 +71,8 @@ background: url(../img/sushi-plate.jpg);
   width:100%;
   padding:10px 0px 10px 10px;
   text-decoration:none;
-  font-size:1.1em;
-  font-family:'Salsa';
+  font-size:1.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
   color:white;
   transition:all .5s;
   -webkit-transition:all .5s;
@@ -82,21 +80,21 @@ background: url(../img/sushi-plate.jpg);
 
 .navBottom a:hover {
   background:darkgrey;
-  color:whitesmoke;
+  color:red;
   
 }
 
 .contents {
   display:block;
-  margin-left:275px;
   width:100%;
+  padding-left: 275px;
 
 }
 
 .cTitle {
-  width:100%;
-  height:70px;
-  border:1px solid lightgrey;
+  width:auto;
+  height:auto;
+
 }
 
 .cTitle h1 {
@@ -116,25 +114,53 @@ background: url(../img/sushi-plate.jpg);
 }
 
 .sect {
-  display:block;
-  width:90%;
+  display:white;
+  width:100%;
   margin:0 auto;
   overflow:hidden;
 }
 
 .sect h2 {
-  display:block;
+
   width:100%;
-  height:35px;
-  margin:0px 0px 0px 0px;
-  padding:0px 0px 0px 20px;
-  font-family:'Qwigley';
+
   font-size:2.5em;
-  border-bottom:2px solid #68B4EF;
+
+}
+
+.agenda h2{
+  
+  width:100%;
+  font-size:8.5em;
+  color:white;
+  font-family: 'Delius Swash Caps', cursive;
+  margin:0px 0px 0px 0px;
+  padding:10% 50px 50px 80px;
+
+}
+
+.agenda article{
+  
+  width:100%;
+  background: black;
+  opacity: .5;
+    padding-left:90px;
+    padding-right:90px;
+    margin-top: 12px;
+}
+
+.agenda p{
+  
+
+  font-size:1.31em;
+  color:white;
+
+
 }
 
 .sect:nth-child(2n) h2 {
-  padding:0px 0px 0px 600px;
+  padding:0px 0px 0px 50px;
+font-family: 'Permanent Marker', cursive;
 }
 
 .sect p {
@@ -145,46 +171,33 @@ background: url(../img/sushi-plate.jpg);
   text-align:left;
   text-indent:25px;
   line-height:1.5em;
+  color:white;
 }
 
-.agenda ul {
-  list-style:none;
+.agenda{
+
+  background: url("../img/sushi-bg.jpg");
+  background-size: 100% 706px;
+  background-repeat: no-repeat;
+  height: auto;
+
 }
 
-.agenda li {
-  padding:0px 0px 20px 0px;
-}
 
-.agenda strong {
-  padding:0px 100px 0px 0px;
-}
-
-.agenda li:nth-child(5) strong {
-  padding:0px 92px 0px 0px;
-}
-
-.agenda li:nth-child(6) strong {
-  padding:0px 92px 0px 0px;
-}
-
-.agenda li:nth-child(7) strong {
-  padding:0px 92px 0px 0px;
-}
-
-.discussions strong {
+.map strong {
   font-size:1.2em;
   display:block;
   width:100%;
   padding:20px 0px 0px 25px;
 }
 
-.discussions em {
+.map em {
   display:block;
   width:100%;
   padding:0px 0px 15px 55px;
 }
 
-.discussions p {
+.map p {
   padding:0px 0px 10px 10px;
   margin:0;
 }
@@ -194,23 +207,33 @@ background: url(../img/sushi-plate.jpg);
   margin:0 auto;
 }
 
-.speaker {
-  display:inline-block;
-  width:200px;
-  height:200px;
-  margin:20px 0px 20px 28px;
-  border-radius:10px;
-  opacity:.85;
-  cursor:pointer;
-  transition:all .5s;
-  -webkit-transition:all .5s;
-  overflow:hidden;
+
+.menu{
+
+background: white
 }
 
-.speaker:hover {
-  opacity:1;
-  box-shadow:0px 0px 15px black;
+.menu p{
+
+background: white;
+color:black;
 }
+
+.menu h2{
+
+
+
+}
+
+.menu-legend{
+
+float:left;
+padding-left:50px;
+padding-right:50px;
+padding-top:40px;
+
+}
+
 
 .description p {
   padding:0;
@@ -230,24 +253,7 @@ background: url(../img/sushi-plate.jpg);
   -webkit-transition:all .5s;
 }
 
-.speaker:hover .description {
-  margin-top:150px;
-}
 
-.speaker.one {
-  background:url('http://www.ctg.albany.edu/static/iscc_images/powell.jpg') no-repeat;
-  background-size:100%;
-}
-
-.speaker.two {
-  background:url('http://www.ctg.albany.edu/static/iscc_images/flood.jpg') no-repeat;
-  background-size:100%;
-}
-
-.speaker.three {
-  background:url('http://www.ctg.albany.edu/static/iscc_images/gallagher.jpg') no-repeat;
-  background-size:100%;
-}
 
 .formLine {
   display:block;
@@ -260,6 +266,86 @@ background: url(../img/sushi-plate.jpg);
   display:block;
   width:100px;
 }
+
+
+/*Menu Items*/
+
+.image-box-wrapper {
+  width:100%;
+  margin:50px auto;
+  padding:50px;
+  margin-top:-40px;
+}
+
+.image-box {
+  width:210px;
+  height:160px;
+  overflow:hidden;
+  background-color:white;
+  border:1px solid #ccc;
+  float:left;
+  margin:1px 1px;
+  font:normal normal 12px/1.4 Segoe,"Segoe UI",Arial,Sans-Serif;
+  color:#333;
+}
+
+.image-container,
+.image-details {
+  height:150px;
+  border:5px solid white;
+  background-color:#ffc;
+  transition:margin-top .4s ease-out .4s;
+}
+
+.image-container img {
+  width:200px;
+  height:150px;
+  padding:0 0;
+  margin:0 0;
+  border:none;
+  outline:none;
+  max-width:none;
+  max-height:none;
+  background-color:black;
+}
+
+.image-details h4,
+.image-details p {
+  margin:0 0 .2em;
+  padding:0 0;
+  height:70px;
+}
+
+.image-details h4 {
+  font-size:120%;
+  height:auto;
+}
+
+.image-details .details {
+  padding:10px 12px;
+  overflow:hidden;
+}
+
+.image-details .more {
+  color:white;
+  text-decoration:none;
+  display:block;
+  text-align:center;
+  font-weight:bold;
+  background-color:#f9a;
+  height:26px;
+  line-height:26px;
+  margin:10px 0 0;
+}
+
+.image-box:hover {border-color:#bbb}
+.image-box:hover .image-container {margin-top:-160px}
+.image-details .more:hover {background-color:black}
+
+
+
+
+
 
 /*MEDIA QUERIES*/
 

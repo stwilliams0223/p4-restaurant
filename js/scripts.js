@@ -12,30 +12,35 @@ $('a#agenda').click(function() {
   return false;
 });
 
-$('a#disc').click(function() {
+$('a#menu').click(function() {
   $('html, body').clearQueue().animate({
- scrollTop:$('.discussions').offset().top
+ scrollTop:$('.menu').offset().top
   }, 1000);
   return false;
 });
 
-$('a#rsvp').click(function() {
+$('a#map').click(function() {
   $('html, body').clearQueue().animate({
- scrollTop:$('.rsvp').offset().top
+ scrollTop:$('.map').offset().top
   }, 1000);
   return false;
 });
 
-$('a#there').click(function() {
+
+$('a#contact').click(function() {
   $('html, body').clearQueue().animate({
- scrollTop:$('.there').offset().top
+ scrollTop:$('.contact').offset().top
   }, 1000);
   return false;
 });
 
-$('a#speakers').click(function() {
+$('a#book').click(function() {
   $('html, body').clearQueue().animate({
- scrollTop:$('.speakers').offset().top
+ scrollTop:$('.book').offset().top
   }, 1000);
   return false;
 });
+
+
+
+
