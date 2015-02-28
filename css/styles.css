@@ -27,7 +27,7 @@ background: url("../img/sushi-plate2.jpg")
   display:block;
   height:100%;
   width:275px;
-  background: #222222;
+  background: black;
   color: white;
   font-family: 'Open Sans Condensed', sans-serif;
 }
